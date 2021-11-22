@@ -13,3 +13,7 @@ body{
 .gioco_wardwall{
     float:center;
 }
+
+.nomeGiocatore{
+    float:right;
+}
