@@ -17,3 +17,7 @@ body{
 .nomeGiocatore{
     float:right;
 }
+
+.navbar-nav{
+    border-radius: 70px;
+}
