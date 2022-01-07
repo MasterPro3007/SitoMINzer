@@ -10,9 +10,9 @@
     <title>MINzer site | COSA ABBIAMO INTENZIONE DI FARE</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-dark bg-dark">
           <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="icon.png" alt="" width="30" height="24">
@@ -24,15 +24,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="nav justify-content-center">
             <li class="nav-item">
               <button type="button" class="btn btn-outline-dark">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home (Pagina Attuale)</a>
               </button>
             </li>
             <li class="nav-item">
               <button type="button" class="btn btn-outline-dark">
-              <a class="nav-link" href="cosa_abbi_inte_di_fare.html">Cosa abbiamo intenzione di fare! (Pagina Attuale)</a>
+              <a class="nav-link" href="cosa_abbi_inte_di_fare.html">Cosa abbiamo intenzione di fare!</a>
               </button>
             </li>
             <li class="nav-item">
@@ -45,16 +45,20 @@
               <a class="nav-link" href="gioco.html">Il nostro gioco!</a>
             </button>
             </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-dark">
+                <a class="nav-link" href="candidature-chatmod.html">Candidature chatmod per il server discord</a>
+              </button>
+              </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-            <button onclick="search()" class="btn btn-outline-primary" type="submit">Cerca</button>
+            <button onclick="cerca()" class="btn btn-outline-primary" type="submit">Cerca</button>
           </form>
-          <h4 id="nomePlayer">Login:</h2>
         </div>
       </div>
       <br>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-dark bg-dark">
           <form class="container-fluid">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
