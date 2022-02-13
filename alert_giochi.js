@@ -1,5 +1,6 @@
 var nomeGiocatore = window.prompt("Ciao, giocatore inserisci il tuo nome MUAHHAHAHAHHAHAH")
 alert("Ciao" + " " + nomeGiocatore + " " + "questo gioco si chiama SASSO, CARTA, FORBICE!");
+document.getElementById("sceltaComputer").style.display = 'none';
 
 document.getElementById("nomePlayer").innerHTML= "Nome immesso:" + " " + nomeGiocatore;
 
@@ -25,6 +26,7 @@ function confermaFunClick(){
     document.getElementById("sasso").style.display = 'none';
     document.getElementById("forbice").style.display = 'none';
     document.getElementById("confermaBottone").style.display = 'none';
+    document.getElementById("sceltaComputer").style.display = 'block';
     var sceltaComputer;
     if (sceltaUtente == "carta"){
         sceltaComputer = "forbici"
@@ -36,13 +38,13 @@ function confermaFunClick(){
         sceltaComputer = "carta"
     }
     if (sceltaUtente == "carta"){
-        document.getElementById("SceltaPC").innerHTML = nomeGiocatore + " il computer ha scelto forbici!"
+        document.getElementById("sceltaComputer").innerHTML = nomeGiocatore + " il computer ha scelto forbici!"
     }
     if (sceltaUtente == "forbici"){
-        document.getElementById("SceltaPC").innerHTML = nomeGiocatore + " il computer ha scelto sasso!"
+        document.getElementById("sceltaComputer").innerHTML = nomeGiocatore + " il computer ha scelto sasso!"
     }
     if (sceltaUtente == "sasso"){
-        document.getElementById("SceltaPC").innerHTML = nomeGiocatore + " il computer ha scelto carta!"
+        document.getElementById("sceltaComputer").innerHTML = nomeGiocatore + " il computer ha scelto carta!"
     }
     document.getElementById("titolo").innerHTML = nomeGiocatore + " HAI P! MUAHAHHAA";
     document.getElementById("titolo").innerHTML = nomeGiocatore + " HAI PE! MUAHAHHAA";
